@@ -18,7 +18,7 @@
   }
   
   .games__textcontent {
-    width: 50%;
+    width: 100%;
   }
 
   .games__img {
@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 38px;
-    width: 50%;
+    width: 100%;
 }  
   .games__img img {
     border-radius: 38px;
@@ -75,6 +75,26 @@
   }
 
   @media screen and (max-width: 767px) {
+    .Games {
+      height: auto;
+    }
+
+    .games__content {
+      height: auto;
+      flex-direction: column-reverse;
+      gap: 25px;
+    }
+
+    .games__header h2 {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .games__text p {
+      text-align: center;
+      
+      font-size: 14px;
+    }
 
   }
 

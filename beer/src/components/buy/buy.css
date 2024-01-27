@@ -37,7 +37,7 @@
     }
     
     .buy__textcontent {
-      width: 50%;
+      width: 100%;
     }
   
     .buy__img {
@@ -45,7 +45,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 38px;
-      width: 50%;
+      width: 100%;
   }  
     .buy__img img {
       border-radius: 38px;
@@ -103,20 +103,34 @@
   }
 
 
+  @media screen and (max-width: 767px) {
+    .Buy {
+      height: auto;
+    }
 
+    .buy__content {
+      height: auto;
+      flex-direction: column;
+      gap: 25px;
+    }
 
-  @media (max-width: 1790px) {
+    .buy__header h2 {
+      text-align: center;
+      font-size: 16px;
+    }
 
+    .buy__text p {
+      text-align: center;
+      
+      font-size: 14px;
+    }
 
+    .buy__btn {
+      text-align: center;
+    }
 
-
-
-    
-  }
-
-
-  @media (max-width: 1080px) {
-
-
+    .buy__btn button {
+      font-size: 16px;
+    }
 
   }

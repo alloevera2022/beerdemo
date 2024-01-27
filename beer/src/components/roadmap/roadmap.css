@@ -14,8 +14,9 @@
     display: flex;
     background: url("./../../img/background.png") center top no-repeat;
     background-size: cover; /* Заменено на cover */
-    height: 100vh;
+    height: 100svh;
     justify-content: center;
+    align-items: center;
 
   }
   
@@ -27,20 +28,17 @@
       justify-content: center;
       z-index: 1;
   }
-
-  
   
     .roadmap__header {
-      margin-top: 202px;
-      margin-bottom: 64px; /* Пространство между token__header и token__table */
+      margin-bottom: 5%; /* Пространство между token__header и token__table */
     }
   
     .roadmap__header h1 {
-      font-size: 36px;
+      font-size: 5vh;
     }
   
     #roadmap_header {
-      padding: 42px 48px;
+      padding: 3% 5%;
       border: 1px solid #FF008A; 
       border-radius: 25px;
       background-color: #282828;
@@ -53,17 +51,16 @@
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку при нехватке места */
-     /* max-width: 600px;  Максимальная ширина для поддержки уменьшения экрана */
       margin: 0 auto; /* Центрирование по горизонтали */
     }
     
     .roadmap__table-text {
       flex: 1; /* Равномерное распределение пространства между элементами */
-      margin: 40px; /* Пространство между элементами */
-      font-size: 36px;
-      line-height: 36px;
-      padding-top: 40px;
-      padding-bottom: 40px;
+      margin: 2%; /* Пространство между элементами */
+      font-size: 4vh;
+      line-height: 1.5;
+      padding-top: 2%;
+      padding-bottom: 2%;
       border-radius: 25px;
       background-color: #000000;
       border: 1px solid #FFFFFF;
@@ -72,94 +69,69 @@
     }
   
     #r1 {
-      margin-bottom: 22px;
+      margin-bottom: 1%;
     }
     
 
     
     .roadmap__btn {
-      margin-top: 52px; /* Пространство между token__table-subtitle и token__btn */
+      margin-top: 3%; 
+      text-align: center;
     }
     
   
   .roadmap__btn button {
-      font-size: 40px;
-      font-weight: 400;
-      line-height: 40px;
-      padding: 50px 48px;
-      background-color: #FF4D00;
-      color: #FFFFFF;
-      border-radius: 25px;
-      box-shadow: 0px 4px 24px 0px #000000;
-      cursor: pointer;
+    font-size: 5.5vh;
+    line-height: 1.5;
+    padding: 3% 4%;
+    background-color: #FF4D00;
+    color: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0px 4px 24px 0px #000000;
+    cursor: pointer;
   
     }
 
-    @media (max-width: 1790px) {
-
-      .roadmap__header {
-        margin-top: 148px;
-        margin-bottom: 54px; /* Пространство между token__header и token__table */
-      }
+    
+    @media screen and (max-width: 767px) {
 
       .roadmap__header h1 {
-        font-size: 32px;
+        font-size: 5vh;
+  
+        margin-bottom: 15%;
       }
-
+  
       .roadmap__table-text {
-        font-size: 30px;
-        line-height: 36px;
-        padding-top: 34px;
-        padding-bottom: 34px;
-            
+  
+        margin: 4%; /* Пространство между элементами */
+        font-size: 3vh;
+        line-height: 1.5;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    
+      }
+    
+      #r1 {
+        margin-bottom: 2%;
+      }
+      
+      .roadmap__table-subtitle {
+        font-size: 2vh;
+        margin: 4% auto; /* Пространство между token__table и token__table-subtitle */
+        padding-top: 4%;
+        padding-bottom: 4%;
+       
+    
       }
       .roadmap__btn {
-        margin-top: 28px; /* Пространство между token__table-subtitle и token__btn */
+        margin-top: 15%; /* Пространство между token__table-subtitle и token__btn */
+
+        text-align: center;
       }
 
       .roadmap__btn button {
-        font-size: 36px;
-        padding: 44px 42px;
- 
-    
+        font-size: 4vh;
+        
+
       }
-  
-    }
-
-    @media (max-width: 1200px) {
-
-      .roadmap__header {
-        margin-top: 108px;
-        margin-bottom: 44px; /* Пространство между token__header и token__table */
-      }
-
-      .roadmap__header h1 {
-        font-size: 28px;
-      }
-
-      .roadmap__table-text {
-        font-size: 26px;
-        line-height: 32px;
-        padding-top: 32px;
-        padding-bottom: 32px;
-            
-      }
-      .roadmap__btn {
-        margin-top: 24px; /* Пространство между token__table-subtitle и token__btn */
-      }
-
-      .roadmap__btn button {
-        font-size: 28px;
-        padding: 38px 36px;
- 
-    
-      }
-  
-    }
-
-    @media (max-width: 1080px) {
-
-     
-    
-  
     }
